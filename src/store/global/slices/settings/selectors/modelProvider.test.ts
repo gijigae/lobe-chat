@@ -65,10 +65,10 @@ describe('modelProviderSelectors', () => {
           displayName: 'gpt-3.5-turbo-16k',
           name: 'gpt-3.5-turbo-16k',
         },
-        // {
-        //   displayName: 'gpt-4-32k',
-        //   name: 'gpt-4-32k',
-        // },
+        {
+          displayName: 'gpt-4-32k',
+          name: 'gpt-4-32k',
+        },
         {
           displayName: 'gpt-4-0125-preview',
           name: 'gpt-4-0125-preview',
