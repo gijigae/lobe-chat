@@ -89,6 +89,7 @@
     "ai": "^2",
     "antd": "^5",
     "antd-style": "^3",
+    "api": "^6.1.1",
     "brotli-wasm": "^2",
     "chroma-js": "^2",
     "dayjs": "^1",
