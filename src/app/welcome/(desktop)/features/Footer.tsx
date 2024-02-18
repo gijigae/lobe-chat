@@ -2,14 +2,16 @@
 
 import { ActionIcon, DiscordIcon } from '@lobehub/ui';
 import { useTheme } from 'antd-style';
-import { Book } from 'lucide-react';
+import { Book, Github } from 'lucide-react';
 import { memo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { DISCORD, WIKI } from '@/const/url';
+import { DISCORD, DOCUMENTS, GITHUB } from '@/const/url';
 
 const Footer = memo(() => {
   const theme = useTheme();
+  const { t } = useTranslation('common');
 
   return (
     <Flexbox align={'center'} horizontal justify={'space-between'} style={{ padding: 16 }}>
@@ -25,16 +27,16 @@ const Footer = memo(() => {
         />
         <ActionIcon
           icon={Book}
-          onClick={() => window.open(WIKI, '__blank')}
+          onClick={() => window.open(DOCUMENTS, '__blank')}
           size={'site'}
-          title={'Wiki'}
+          title={t('document')}
         />
-        {/* <ActionIcon
+        <ActionIcon
           icon={Github}
           onClick={() => window.open(GITHUB, '__blank')}
           size={'site'}
           title={'GitHub'}
-        /> */}
+        />
       </Flexbox>
     </Flexbox>
   );
