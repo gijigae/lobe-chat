@@ -63,7 +63,7 @@ describe('LobeAnthropicAI', () => {
 
       // Assert
       expect(instance['client'].messages.create).toHaveBeenCalledWith({
-        max_tokens: 1024,
+        max_tokens: 4096,
         messages: [{ content: 'Hello', role: 'user' }],
         model: 'claude-instant-1.2',
         stream: true,
@@ -96,7 +96,7 @@ describe('LobeAnthropicAI', () => {
 
       // Assert
       expect(instance['client'].messages.create).toHaveBeenCalledWith({
-        max_tokens: 1024,
+        max_tokens: 4096,
         messages: [{ content: 'Hello', role: 'user' }],
         model: 'claude-instant-1.2',
         stream: true,
